@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cordo Privacy Policy</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Sillo Privacy Policy</title>
 <style>
   :root { --bg: #ffffff; --text: #1b1b1f; --muted: #5c5c66; --line: #e4e4ea; --accent: #3355dd; }
   @media (prefers-color-scheme: dark) {
@@ -27,10 +29,10 @@
 </head>
 <body>
 <main>
-<h1>Cordo Privacy Policy</h1>
-<p class="muted">Effective November 12, 2026 · <a href="./">Home</a> · <a href="terms.html">Terms of Use</a></p>
+<h1>Sillo Privacy Policy</h1>
+<p class="muted">Effective November 14, 2026 · <a href="./">Home</a> · <a href="terms.html">Terms of Use</a></p>
 
-<p>Cordo is a roommate app for splitting bills, sharing chores and keeping in touch with the people you live with. It is run by an independent developer ("we", "us"). This policy explains what Cordo collects, who can see it, and the choices you have. We wrote it to be read, so it's short and specific.</p>
+<p>Sillo is a roommate app for splitting bills, sharing chores and keeping in touch with the people you live with. It is run by an independent developer ("we", "us"). This policy explains what Sillo collects, who can see it, and the choices you have. We wrote it to be read, so it's short and specific.</p>
 
 <p><strong>The short version:</strong> we collect only what the app needs to work. We don't show ads, we don't track you across other apps or websites, we don't use analytics, and we never sell your data.</p>
 
@@ -39,22 +41,23 @@
 <table>
   <tr><th>Data</th><th>Why</th></tr>
   <tr><td><strong>Email address and password</strong></td><td>To create and sign in to your account. Your password is handled by Google Firebase Authentication and stored only in hashed form. We never see it.</td></tr>
-  <tr><td><strong>Username and status</strong></td><td>So your roommates know who you are. Your status is an optional short note you write yourself (for example "Studying").</td></tr>
-  <tr><td><strong>Payment usernames</strong> (optional)</td><td>If you add a Venmo, Cash App or PayPal username, roommates in your suites can open a payment to you in that app. We never collect bank or card details.</td></tr>
-  <tr><td><strong>Suite content</strong></td><td>Everything you add to a suite: chat messages, chores, grocery items, polls and votes, calendar events, expenses and payment records, points, game moves and results, home/away status, and your suite's name and settings.</td></tr>
+  <tr><td><strong>Username and profile picture</strong></td><td>So the people you share a space with know who you are. Your profile picture is an emoji and a background color you pick. You can't upload a photo.</td></tr>
+  <tr><td><strong>Status</strong> (optional)</td><td>A short note you write yourself (for example "At work till 6"). You set it separately in each space, and only that space's members can see it.</td></tr>
+  <tr><td><strong>Payment usernames</strong> (optional)</td><td>If you add a Venmo, Cash App or PayPal username, roommates in your spaces can open a payment to you in that app. We never collect bank or card details.</td></tr>
+  <tr><td><strong>Space content</strong></td><td>Everything you add to a space: chat messages, chores, grocery items, polls and votes, calendar events, expenses and payment records, points, game moves and results, home/away status, and your space's name and settings, including what each action is worth in points.</td></tr>
   <tr><td><strong>Push notification token</strong></td><td>A code from Apple that lets us deliver notifications to your device. You can turn notifications off in the app or in iPhone Settings.</td></tr>
   <tr><td><strong>Block list</strong></td><td>The people you've blocked, so their messages are hidden from you. Only you can see it.</td></tr>
   <tr><td><strong>Reports</strong></td><td>If you report someone, we store who reported whom, the reason, and a copy of the reported content, so we can review it.</td></tr>
-  <tr><td><strong>Rate-limit timestamps</strong></td><td>The time of your last message, notification, challenge, report and suite creation, used only to stop spam.</td></tr>
+  <tr><td><strong>Rate-limit timestamps</strong></td><td>The time of your last message, notification, challenge, report and space creation, used only to stop spam.</td></tr>
 </table>
 </div>
-<p>Some small preferences, such as the last suite you opened, are stored only on your phone.</p>
-<p><strong>What we don't collect:</strong> your location, your contacts, photos from your camera or library, your browsing, or any advertising identifier. Earlier test versions of Cordo had optional photo and location features. Those are switched off, and any location shared in an earlier version is deleted the next time that person opens the app.</p>
+<p>Some small preferences, such as the last space you opened, are stored only on your phone.</p>
+<p><strong>What we don't collect:</strong> your location, your contacts, photos from your camera or library, your browsing, or any advertising identifier.</p>
 
 <h2>Who can see your information</h2>
 <ul>
-  <li><strong>People in your suites</strong> can see what you add to that suite, along with your username, status, home/away status and any payment usernames you've added.</li>
-  <li><strong>Other Cordo users</strong> who are signed in can look up basic profile information: your username, your status, and a profile photo if you set one in an earlier version. Don't put anything in your username or status that you wouldn't want other users to see.</li>
+  <li><strong>People in your spaces</strong> can see what you add to that space, along with your username, profile picture, your status in that space, your home/away status and any payment usernames you've added. Members of a space can also watch games being played in it.</li>
+  <li><strong>Other Sillo users</strong> who are signed in can look up basic profile information: your username and profile picture. Don't put anything in your username that you wouldn't want other users to see.</li>
   <li><strong>The developer</strong> can access stored data when needed to run the app: reviewing reports, fixing problems, handling your requests, or complying with the law. We don't browse your content for any other reason.</li>
   <li><strong>Nobody else</strong>, except the service providers below, or if the law requires it (for example, a valid court order).</li>
 </ul>
@@ -65,27 +68,27 @@
   <li><strong>Expo</strong> delivers push notifications. It receives your device's push token and the text of each notification (which can include a roommate's name or a message preview). <a href="https://expo.dev/privacy">Expo privacy</a></li>
   <li><strong>Apple</strong> delivers notifications to your iPhone and distributes the app through the App Store.</li>
 </ul>
-<p>When you tap a Venmo, Cash App or PayPal button, Cordo only opens that app or website with the amount filled in. Anything you do there is between you and that company, under their own privacy policy.</p>
+<p>When you tap a Venmo, Cash App or PayPal button, Sillo only opens that app or website with the amount filled in. Anything you do there is between you and that company, under their own privacy policy.</p>
 
 <h2>How long we keep it</h2>
-<p>We keep your data while your account exists. You can delete your account at any time in the app (Edit profile → Delete account). That removes your profile, your chat messages, your payment usernames, your block list and your settings, and signs you out of every suite.</p>
-<p>Some records stay in the suites you were part of, because your roommates' balances and history depend on them: expenses and payment records, points and game records, and chores and polls you created. These keep an internal user ID but are no longer connected to a profile. Reports are kept as long as needed for safety and legal reasons.</p>
+<p>We keep your data while your account exists. You can delete your account at any time in the app (Edit profile → Delete account). That removes your profile, your chat messages, your payment usernames, your block list and your settings, and signs you out of every space.</p>
+<p>Some records stay in the spaces you were part of, because your roommates' balances and history depend on them: expenses and payment records, points and game records, and chores and polls you created. These keep an internal user ID but are no longer connected to a profile. Reports are kept as long as needed for safety and legal reasons.</p>
 
 <h2>Security</h2>
-<p>Your data is protected by Google Firebase's security and encryption, and by access rules that limit each suite's data to its members. No online service can promise perfect security. If a breach ever affects your personal information, we'll notify you as the law requires.</p>
+<p>Your data is protected by Google Firebase's security and encryption, and by access rules that limit each space's data to its members. No online service can promise perfect security. If a breach ever affects your personal information, we'll notify you as the law requires.</p>
 
 <h2>Adults only</h2>
-<p>Cordo is for people 18 and older. We don't knowingly collect information from anyone under 18. If we learn an account belongs to someone under 18, we'll delete it. If you believe that's happened, contact us.</p>
+<p>Sillo is for people 18 and older. We don't knowingly collect information from anyone under 18. If we learn an account belongs to someone under 18, we'll delete it. If you believe that's happened, contact us.</p>
 
 <h2>Your choices and rights</h2>
 <ul>
-  <li><strong>See and change</strong> your profile, status and payment usernames in the app at any time.</li>
+  <li><strong>See and change</strong> your profile, your status in each space and your payment usernames in the app at any time.</li>
   <li><strong>Delete</strong> your account and data in the app, or by emailing us.</li>
   <li><strong>Request a copy</strong> of your data, or ask any other privacy question, by emailing us. We'll respond within a reasonable time.</li>
   <li><strong>Turn off</strong> notifications in the app or in iPhone Settings.</li>
 </ul>
 <p>Depending on where you live (for example California or the European Union), you may have additional rights, such as access, correction, deletion and objection. We'll honor those requests. We don't sell or share personal information for advertising.</p>
-<p>Cordo is run from the United States, and your data is stored there. By using Cordo you understand that your information will be processed in the United States.</p>
+<p>Sillo is run from the United States, and your data is stored there. By using Sillo you understand that your information will be processed in the United States.</p>
 
 <h2>Changes to this policy</h2>
 <p>If we change this policy, we'll update this page and the date at the top. If the change is significant, we'll also tell you in the app.</p>
